@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="no" ?>
+<!-- Our to do list data -->
+<ToDo>
+    <!-- Do I need a secure PDA? -->
+    <Item priority="1" distance="近">Go to the
+        <bold>Toy Store!</bold>
+    </Item>
+    <Item priority="2" distance="无">Do bills</Item>
+    <Item priority="2" distance="远 &amp; 回">Look for Evil Dinosaurs!</Item>
+</ToDo>

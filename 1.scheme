@@ -1,0 +1,18 @@
+(define *queue* '())
+
+(define (empty-queue?)
+	(null? *queue*))
+
+(define (enqueue x)
+	(set! *queue* (append *queue* (list x))))
+
+(define (dequeue)
+	(let ((x (car *queue*)))
+		(set! *queue* (cdr *queue*))
+		x))
+
+(define (fork proc)
+	(call/cc
+		(lambda (k)
+			(enqueue k)	
+			(proc))))
