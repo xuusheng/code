@@ -1,0 +1,10 @@
+#!/bin/sh
+
+FG='#ffffff'
+BG='#003aff'
+
+while true ; do
+    dt=`date +"%d日 %H:%M %a"`
+    printf "%s\n" "$dt"
+    sleep 20
+done | dzen2 -e '' -x '1260' -h '14' -w '126' -ta r -fg $FG -bg $BG
