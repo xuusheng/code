@@ -1,3 +1,7 @@
+module Bitmap
+( mapbit,       
+  bitmap ) where
+  
 import Data.Char
 
 listSum::[Int]->Int

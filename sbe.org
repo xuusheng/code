@@ -1,0 +1,13 @@
+这是一个org reproducible research的演示
+| Txn613.c | "Txn613.c" | /e/dev/tpl/src/Manage/Txn613.c |
+| Txn614.c | "Txn614.c" | /e/dev/tpl/src/Manage/Txn614.c |
+#+TBLFM: $2='(concat "\"" "$1" "\"");L::$3='(sbe "basic-sh" (n $2))
+
+#+name: basic-sh
+#+BEGIN_SRC sh :var n="Txn613.c"
+locate "$n"
+#+END_SRC  
+
+#+RESULTS: basic-sh
+: /e/dev/tpl/src/Manage/Txn613.c
+
